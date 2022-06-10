@@ -1,0 +1,130 @@
+#shape .lol { height:200px; width:200px;}
+
+.paused{
+    -webkit-animation-play-state:paused;
+    -moz-animation-play-state:paused;
+    -o-animation-play-state:paused;
+    animation-play-state:paused;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform:rotateY(0);
+
+
+  }
+  to {-webkit-transform:rotateY(-360deg);
+
+  }
+}
+
+@-moz-keyframes spin {
+    from {
+
+    -moz-transform:rotateY(0);
+
+  }
+  to {
+      -moz-transform:rotateY(-360deg);
+  }
+
+}
+
+#wrapper{
+    width:auto;
+    margin:0 auto;
+    -webkit-perspective: 800;
+    margin:0 auto auto auto;
+    -webkit-perspective-origin: 50% 90px;
+    -webkit-transition:-webkit-perspective,1s;
+    -moz-perspective-origin: 50% 90px;
+    -moz-transition:-webkit-perspective,1s;
+
+}
+
+
+/* Carousel ROTATION SPEED to be adjusted with spin below. */
+#shape {
+  margin:0 auto;
+  height:200px;
+  width:200px;
+  -webkit-transform-style:preserve-3d;
+  -webkit-animation: spin 20s infinite linear;
+  -moz-transform-style:preserve-3d;
+  -moz-animation: spin 20s infinite linear;
+
+}
+
+
+
+.plane {
+      position:absolute;
+      height:240px;
+      width:200px;
+      background-color:rgba(0,0,0, 0.6);
+      text-align:center;
+      font-size:1.5em;
+      color:white;
+      margin: auto 10px auto 10px;
+
+    }
+
+#shape > .p1 {
+  -webkit-transform:translateZ(250px);
+  -moz-transform:translateZ(250px);
+  color:#FFB72B;
+  text-shadow 1px 1px 1px black;
+}
+#shape > .p2 {
+  -webkit-transform:rotateY(45deg) translateZ(250px);
+   -moz-transform:rotateY(45deg) translateZ(250px);
+   color:#FFB72B;
+}
+#shape > .p3 {
+  -webkit-transform:
+    rotateY(90deg) translateZ(250px);
+   -moz-transform:
+    rotateY(90deg) translateZ(250px);
+    color:#FFB72B;
+}
+#shape > .p4 {
+  -webkit-transform: rotateY(135deg) translateZ(250px);
+  -moz-transform: rotateY(135deg) translateZ(250px);
+  color:#FFB72B;
+}
+#shape > .p5 {
+  -webkit-transform:rotateY(180deg) translateZ(250px);
+  -moz-transform:rotateY(180deg) translateZ(250px);
+  color:#FFB72B;
+  text-shadow :1px 1px 1px black;
+}
+#shape > .p6 {
+  -webkit-transform:rotateY(225deg)
+    translateZ(250px);
+  -moz-transform:rotateY(225deg)
+    translateZ(250px);
+    color:#FFB72B;
+}
+#shape > .p7 {
+  -webkit-transform:rotateY(270deg)
+    translateZ(250px);
+   -moz-transform:rotateY(270deg)
+    translateZ(250px);
+    color:#FFB72B;
+}
+#shape > .p8 {
+  -webkit-transform:rotateY(315deg)
+    translateZ(250px);
+   -moz-transform:rotateY(315deg)
+    translateZ(250px);
+    color:#FFB72B;
+}
+
+
+
+#wrapper:hover {
+  -webkit-perspective-origin: 50% -250px;
+  -moz-perspective-origin: 50% -250px;
+
+
+}

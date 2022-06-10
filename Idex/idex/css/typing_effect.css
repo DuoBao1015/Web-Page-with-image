@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+
+
+
+
+.type-wrap {
+  font-size: 25px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: bold;
+  letter-spacing: 4px;
+
+  position: absolute;
+  top: 110%;
+
+
+
+}
+
+
+/* the above is for styling puposes only */
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}

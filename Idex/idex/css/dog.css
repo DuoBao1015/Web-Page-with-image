@@ -1,0 +1,172 @@
+@charset "utf-8";
+.dog-row{
+	height: 700px;
+	overflow: hidden;
+	position: relative;
+	background-image: linear-gradient(to bottom, #4FA4E6, #2375B4);
+}
+.dog-row .icon-nav{
+	display: flex;
+	padding: 30px 0;
+	align-items: center;
+	justify-content: center;
+}
+.dog-row .icon-nav a{
+	width: 80px;
+	height: 80px;
+	margin: 0 60px;
+	transition: all .5s ease;
+}
+.dog-row .icon-nav a:hover{
+	transform: scale(1.1);
+}
+
+.dog-row .icon-nav a img{
+	width: 100%;
+}
+
+div.planet{
+
+	position:absolute;
+	bottom:-1100px;
+	margin:0px auto;
+	width:980px;
+	background:url(../img/dog/planet.png) center no-repeat;
+	height:1920px;
+	z-index:0;
+	left:50%;
+	margin-left: -490px;
+	
+}
+
+div.dog-wrapper{
+	
+	position:absolute;
+	z-index: 10;
+	bottom:300px;
+	left:50%;
+	transform: translateX(-50%);
+	
+}
+
+div.dog{
+	
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	width:80px;
+	height:80px;
+	z-index:999;
+	background:url(../img/dog/dog.png) 0px 0px no-repeat;
+	
+}
+
+div.search{
+	
+	position:absolute;
+	top:145px;
+	right:0px;
+	width:340px;
+	background:#eeeeee;
+	box-shadow:1px 1px 0 #ffffff inset, 5px 5px 0px #3680b1;
+	color:#555555;
+	font-size:14px;
+	text-shadow:1px 1px 0 #ffffff;
+	border-radius:30px;
+	padding:10px;
+	z-index:999;
+	
+}
+
+div.search input[type=submit]:hover{
+	
+	background:#ffffff url(../img/dog/search.png) center center no-repeat;	
+	cursor:pointer;
+	
+}
+
+div.search input[type=submit]{
+	
+	box-shadow:1px 1px 0 #ffffff inset, 5px 5px 0px #3680b1;
+	background:#eeeeee url(../img/dog/search.png) center center no-repeat;
+	border-radius:50px;
+	position:absolute;
+	top:0px;
+	right:380px;
+	width:50px;
+	height:40px;
+	border:none;
+	
+	
+}
+
+div.search input[type=text]{
+	
+	padding:0px 10px;
+	border:0px none;
+	background:none;
+	color:#999999;
+	width:300px;
+	height:20px;
+	
+}
+
+div.top-menu{
+	
+	position:absolute;
+	top:200px;
+	right:0px;
+	color:#ffffff;
+	z-index:998;
+	
+}
+
+div.top-menu a{
+	
+	text-decoration:none;
+	color:#eeeeee;
+	margin:0px 5px;
+	font-size:12px;
+	
+}
+
+div.top-menu a:hover{
+	
+	color:#abd7fa;	
+	
+}
+
+div.dog-bubble{
+	
+	font-size:14px;
+	line-height:1.5;
+	font-style:italic;
+	height:179px;
+	width:246px;
+	background:url(../img/dog/bubble.png) top center no-repeat;
+	padding:20px 0px;
+	position:absolute;
+	bottom:0px;
+	left:30px;
+	z-index:999;
+	opacity:0;
+	color:#555555;
+	font-size:14px;
+	text-shadow:1px 1px 0 #ffffff;
+	
+}
+
+div.dog-bubble>p{
+	
+	text-align:center;
+	padding:0px 35px;	
+	
+}
+
+div.bubble-options{
+
+	opacity:0;
+	visibility:hidden;
+	display:none;
+	
+}

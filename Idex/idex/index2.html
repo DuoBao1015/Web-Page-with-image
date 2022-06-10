@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/tiles.css">
+
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/carousel_images.css">
+
+    <link rel="stylesheet" href="css/typing_effect.css">
+
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/dog.css">
+
+    <style>
+    .mapboxgl-popup {
+        max-width: 400px;
+        font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    }
+    .marker1 {
+        background-image: url('IMG_6768.JPG');
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        cursor: pointer;
+        border: 5px solid white;
+      }
+    .mapboxgl-popup {
+        max-width: 200px;
+      }
+    .mapboxgl-popup-content {
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+      }
+</style>
+
+<style>
+
+#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+</style>
+
+
+  </head>
+
+  <body>
+
+
+<div class="bgimg-1 darken" >
+
+<div class="carousel_and_caption_container">
+
+
+<div class=" caption">
+    <p class=" padded-multiline">
+      <span> "<span style="color:#FFB72B">Awe</span>" is a <span style="color:#FED2AA">positive emotion</span>, akin to <span style="color:#F3F0D7">childlike wonder</span>,
+        that <span style="color:#CEE5D0">emerges when in the presence of vast things not immediately understood.</span>
+      <br>
+
+<!--
+      <div class="word"></div>
+
+    -->
+
+  </span>
+</p>
+
+ <div class=" width type-wrap " ><!-- add static words/sentences here (i.e. text that you don't want to be removed)-->
+   <span id="typed" style="white-space:pre;" class="typed"> </span>
+ </div>
+
+</div>
+
+<div>
+  <div id="wrapper" class = "carousel_position">
+      <div id="shape">
+        <a href="../../photo/index.html" class="plane p1">
+          <span class="carousel_text">Animals</span>
+          <hr width="25%">
+          <img class="carousel_img" src="img/wolf1.webp" >
+        </a>
+
+        <a href="../../photo/index_video.html" class="plane p2">
+          <span class="carousel_text">Stories</span>
+          <hr width="25%">
+          <img class="carousel_img" src="img/campfire.jpg" >
+        </a>
+
+        <a href="../../photo/coming.html" class="plane p3">
+          <span class="carousel_text">Literature</span>
+          <hr width="25%">
+          <img class="carousel_img" src="img/books.jpg" >
+        </a>
+
+        <a  href="../../photo/coming.html" class="plane p4">
+         <span class="carousel_text">Sound</span>
+         <hr width="25%">
+         <img class="carousel_img" src="img/wave.jpg" >
+        </a>
+
+        <a  href="../../photo/coming.html" class="plane p5">
+         <span class="carousel_text">Texture</span>
+         <hr width="25%">
+         <img class="carousel_img" src="img/texture.jpg" >
+        </a>
+
+        <a href="../../photo/coming.html" class="plane p6">
+          <span class="carousel_text">Color</span>
+          <hr width="25%">
+          <img class="carousel_img" src="img/color.jpg" >
+        </a>
+
+        <a href="../../photo/coming.html" class="plane p7">
+          <span class="carousel_text">Nature</span>
+          <hr width="25%">
+          <img class="carousel_img" src="img/nature.jpg" >
+        </a>
+
+        <a href="../../photo/coming.html" class="plane p8">
+          <span class="carousel_text">Light</span>
+          <hr width="25%">
+          <img class="carousel_img" src="img/light.jpeg" >
+        </a>
+
+      <div class="plane p9 middle_panel">
+      <h3> The question is, what will inspire awe for you?</h3>
+      </div>
+    </div>
+  </div>
+
+
+</div><!-- Carousel container -->
+
+</div><!-- carousel and caption container -->
+</div><!-- first section container-->
+
+
+  <div style="color: #777;background-color:white;text-align:center;padding:20px 60px 20px 60px;text-align: justify;">
+
+    <h3 style="text-align:center;" class="what_are_awe_walks_title"> What are Awe Walks?</h3>
+
+    <p style="text-align:center;">
+    An “awe walk” is a stroll in which you intentionally shift your attention outward instead of inward.
+    <hr width = "90%" style="margin-bottom:15px">
+
+    In Fall 2020, Neuroscientist Dr. Virginia Sturm lead a scientific study that showed that going on 15 minute walks looking for things that inspire awe can promote brain health in older adults.
+    </p>
+
+  </div>
+
+  <div class="bgimg-2">
+
+    <div class="gallery" id="gallery">
+
+    <div class="gallery-item">
+        <div class="content"><img src="img/gallery/img1.jpg" alt=""></div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="content"><img src="img/gallery/img2.jpg" alt=""></div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="content"><img src="img/gallery/img3.jpg" alt=""></div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="content"><img src="img/gallery/img4.jpg" alt=""></div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="content"><img src="img/gallery/img5.jpg" alt=""></div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="content"><img src="img/gallery/img6.jpg" alt=""></div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="content"><img src="img/gallery/img7.jpg" alt=""></div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="content"><img src="img/gallery/img8.jpg" alt=""></div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="content"><img src="img/gallery/img9.jpeg" alt=""></div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="content"><img src="img/gallery/img10.jpeg" alt=""></div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="content"><img src="img/gallery/img11.jpeg" alt=""></div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="content"><img src="img/gallery/img12.jpeg" alt=""></div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="content"><img src="img/gallery/img13.jpeg" alt=""></div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="content"><img src="img/gallery/img14.jpg" alt=""></div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="content"><img src="img/gallery/img15.jpeg" alt=""></div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="content"><img src="img/gallery/img16.jpeg" alt=""></div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="content"><img src="img/gallery/img17.jpeg" alt=""></div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="content"><img src="img/gallery/img18.jpg" alt=""></div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="content"><img src="img/gallery/img19.jpg" alt=""></div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="content"><img src="img/gallery/img20.jpg" alt=""></div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="content"><img src="img/gallery/img21.jpg" alt=""></div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="content"><img src="img/gallery/img22.jpg" alt=""></div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="content"><img src="img/gallery/img23.jpeg" alt=""></div>
+    </div>
+
+
+  </div>
+
+
+
+</div>
+
+
+
+<div class="dog-row">
+  <div class="icon-nav">
+    <a href="../../地图/地图/icon.html.html">
+      <img src="./img/dog/map_icon.png" />
+    </a>
+    <a href="../../上传/上传/上传.html">
+      <img src="./img/dog/upload_icon.png" />
+    </span>
+    <a href="#">
+      <img src="./img/dog/photo_icon.png" />
+    </a>
+  </div>
+<div class="dog-wrapper">
+      <!-- dog running -->
+        <div class="dog"></div>
+      <!-- dog running -->
+        
+      <!-- dog bubble talking -->
+        <div class="dog-bubble">
+            
+          </div>
+          
+          <!-- The dog bubble rotates these -->
+          <div class="bubble-options">
+            <p class="dog-bubble">
+                Are you lost, bud? No worries, I'm an excellent guide!
+              </p>
+            <p class="dog-bubble">
+                <br />
+                Arf! Arf!
+              </p>
+              <p class="dog-bubble">
+                <br />
+                Don't worry! I'm on it!
+              </p>
+              <p class="dog-bubble">
+                I wish I had a cookie<br /><img style="margin-top:8px" src="img/dog/cookie.png" alt="cookie" />
+              </p>
+              <p class="dog-bubble">
+                <br />
+                Geez! This is pretty tiresome!
+              </p>
+              <p class="dog-bubble">
+                <br />
+                Am I getting close?
+              </p>
+              <p class="dog-bubble">
+                Or am I just going in circles? Nah...
+              </p>
+              <p class="dog-bubble">
+                <br />
+                  OK, I'm officially lost now...
+              </p>
+              <p class="dog-bubble">
+                I think I saw a <br /><img style="margin-top:8px" src="img/dog/cat.png" alt="cat" />
+              </p>
+              <p class="dog-bubble">
+                What are we supposed to be looking for, anyway? @_@
+              </p>
+          </div>
+          <!-- The dog bubble rotates these -->
+      <!-- dog bubble talking -->
+      </div>
+      
+      <!-- planet at the bottom -->
+        <div class="planet"></div>
+      <!-- planet at the bottom -->
+      </div>
+      
+  </div>
+
+  <div >
+    <div style="color:#ddd;background-color:#282E34;text-align:center;padding:20px;">
+      <h2>Dr. Jennie Gubner</h2>
+      <p>Thanks for Awe Walking with us :)</p>
+      <h5>Dr. Jennie Gubner © 2022</h6>
+    </div>
+  </div>
+
+</div>
+
+
+
+<!-- scripts used -->
+<!-- <script src='./js/jquery.min.js'></script> -->
+<script src='./js/jquery-1.7.2.min.js'></script>
+  <script src="js/carousel.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js'></script>
+  <script  src="js/typing_effect.js"></script>
+  <script  src="js/gallery.js"></script>
+  <script type="text/javascript" src="js/custom-scripts.js"></script>
+  <script type="text/javascript" src="js/jquery.tipsy.js"></script>
+  <script>
+    
+  $(document).ready(function(){
+    universalPreloader();
+  });
+    
+  $(window).load(function(){
+      //remove Universal Preloader
+      universalPreloaderRemove();
+      
+      rotate();
+        dogRun();
+      dogTalk();
+      
+      //Tipsy implementation
+      // $('.with-tooltip').tipsy({gravity: $.fn.tipsy.autoNS});
+  });
+  </script>
+  </body>
+</html>

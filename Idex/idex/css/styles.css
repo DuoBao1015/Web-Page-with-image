@@ -1,0 +1,148 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900);
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+a:link {
+color: #FED2AA;
+background-color: transparent;
+text-decoration: none;
+}
+a:visited {
+color: #F2F013;
+background-color: transparent;
+text-decoration: none;
+}
+a:hover {
+color: #FF7C7C;
+background-color: transparent;
+text-decoration: underline;
+}
+
+
+.bgimg-1 {
+  background-image: url("forest.jpeg");
+  min-height: 600px;
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*height: 100vh;*/
+}
+
+
+
+.bgimg-2 {
+  background-image: url("../img/lake.jpeg");
+  min-height: 600px;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-3 {
+  background-image: url("../img/shed.jpeg");
+  min-height: 600px;
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.caption {
+  display: inline-block;
+  position: relative;
+
+  text-align: left;
+  margin-left: 4%;
+  margin-top: 5%;
+  font-size: 2em;
+font-weight: bolder;
+
+
+}
+.carousel_position{
+  display: inline-block;
+  position: absolute;
+  left: 64%;
+  bottom: 50%;
+  top: 16%;
+
+}
+
+.carousel_and_caption_container{
+
+
+}
+
+
+.border {
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 5px;
+  text-align: center;
+  text-transform:uppercase;
+  font-size: 1.8rem;
+}
+
+.padded-multiline {
+  line-height: 1.4;
+  padding: 120px 50px 50px 50px;
+  width: 400px;
+}
+
+.padded-multiline  {
+  background-color:rgba(0,0,0, 0.9);
+  color: #fff;
+  display: inline-block;
+  padding: 1.5rem;
+}
+
+/* darken allows us to tint an image. */
+.darken {
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0.3, 0.25),
+      rgba(0, 0, 0.3, 0.25)
+      ), url("forest.jpeg");
+}
+
+.darken_wolf {
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0.3, 0.25),
+      rgba(0, 0, 0.3, 0.25)
+      ), url("wolf1.webp");
+}
+
+
+.mid h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 2rem;
+  transform: translate(-50%, -50%);
+}
+
+
+.what_are_awe_walks_title{
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
