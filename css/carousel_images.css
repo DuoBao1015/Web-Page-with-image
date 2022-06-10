@@ -1,0 +1,26 @@
+
+.carousel_img{
+  width: 150px;
+  height: 165px;
+  background-color:rgba(0,0,0, 0.6);
+}
+
+.carousel_text{
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color:#FFB72B;
+  margin: 0;
+
+  font-size: 1.6rem;
+  transform: translate(-50%, -50%);
+
+}
+
+.middle_panel{
+  letter-spacing: 4px;
+
+  font: 22px "Lato", sans-serif;
+  color: #F3F0D7;
+
+}

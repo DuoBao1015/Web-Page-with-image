@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/tiles.css">
+
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/carousel_images.css">
+
+    <link rel="stylesheet" href="css/typing_effect.css">
+
+    <link rel="stylesheet" href="css/gallery.css">
+
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css" rel="stylesheet">
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js"></script>
+
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,800,300' rel='stylesheet' type='text/css'>
+
+
+    <style>
+    .mapboxgl-popup {
+        max-width: 400px;
+        font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    }
+    .marker1 {
+        background-image: url('IMG_6768.JPG');
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        cursor: pointer;
+        border: 5px solid white;
+      }
+    .mapboxgl-popup {
+        max-width: 200px;
+      }
+    .mapboxgl-popup-content {
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+      }
+</style>
+
+<style>
+
+#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+</style>
+
+
+  </head>
+
+  <body>
+
+
+<div class="bgimg-1 darken" >
+
+<div class="carousel_and_caption_container">
+
+
+<div class=" caption">
+    <p class=" padded-multiline">
+      <span> "<span style="color:#FFB72B">Awe</span>" is a <span style="color:#FED2AA">positive emotion</span>, akin to <span style="color:#F3F0D7">childlike wonder</span>,
+        that <span style="color:#CEE5D0">emerges when in the presence of vast things not immediately understood.</span>
+      <br>
+
+<!--
+      <div class="word"></div>
+
+    -->
+
+  </span>
+</p>
+
+ <div class=" width type-wrap " ><!-- add static words/sentences here (i.e. text that you don't want to be removed)-->
+   <span id="typed" style="white-space:pre;" class="typed"> </span>
+ </div>
+
+</div>
+
+<div>
+  <div id="wrapper" class = "carousel_position">
+      <div id="shape">
+        <div class="plane p1">
+          <span class="carousel_text">Animals</span>
+          <hr width="25%">
+          <img class="carousel_img" src="img/wolf1.webp" >
+        </div>
+
+        <div class="plane p2">
+          <span class="carousel_text">Stories</span>
+          <hr width="25%">
+          <img class="carousel_img" src="img/campfire.jpg" >
+        </div>
+
+        <div class="plane p3">
+          <span class="carousel_text">Literature</span>
+          <hr width="25%">
+          <img class="carousel_img" src="img/books.jpg" >
+        </div>
+
+        <div class="plane p4">
+         <span class="carousel_text">Sound</span>
+         <hr width="25%">
+         <img class="carousel_img" src="img/wave.jpg" >
+        </div>
+
+        <div class="plane p5">
+         <span class="carousel_text">Texture</span>
+         <hr width="25%">
+         <img class="carousel_img" src="img/texture.jpg" >
+        </div>
+
+        <div class="plane p6">
+          <span class="carousel_text">Color</span>
+          <hr width="25%">
+          <img class="carousel_img" src="img/color.jpg" >
+        </div>
+
+        <div class="plane p7">
+          <span class="carousel_text">Nature</span>
+          <hr width="25%">
+          <img class="carousel_img" src="img/nature.jpg" >
+        </div>
+
+        <div class="plane p8">
+          <span class="carousel_text">Light</span>
+          <hr width="25%">
+          <img class="carousel_img" src="img/light.jpeg" >
+        </div>
+
+      <div class="plane p9 middle_panel">
+      <h3> The question is, what will inspire awe for you?</h3>
+      </div>
+    </div>
+  </div>
+
+
+</div><!-- Carousel container -->
+
+</div><!-- carousel and caption container -->
+</div><!-- first section container-->
+
+
+  <div style="color: #777;background-color:white;text-align:center;padding:20px 60px 20px 60px;text-align: justify;">
+
+    <h3 style="text-align:center;" class="what_are_awe_walks_title"> What are Awe Walks?</h3>
+
+    <p style="text-align:center;">
+    An “awe walk” is a stroll in which you intentionally shift your attention outward instead of inward.
+    <hr width = "90%" style="margin-bottom:15px">
+
+    In Fall 2020, Neuroscientist Dr. Virginia Sturm lead a scientific study that showed that going on 15 minute walks looking for things that inspire awe can promote brain health in older adults.
+    </p>
+
+  </div>
+
+  <div class="bgimg-2">
+
+    <div class="gallery" id="gallery">
+
+    <div class="gallery-item">
+        <div class="content"><img src="img/gallery/img1.jpg" alt=""></div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="content"><img src="img/gallery/img2.jpg" alt=""></div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="content"><img src="img/gallery/img3.jpg" alt=""></div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="content"><img src="img/gallery/img4.jpg" alt=""></div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="content"><img src="img/gallery/img5.jpg" alt=""></div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="content"><img src="img/gallery/img6.jpg" alt=""></div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="content"><img src="img/gallery/img7.jpg" alt=""></div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="content"><img src="img/gallery/img8.jpg" alt=""></div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="content"><img src="img/gallery/img9.jpeg" alt=""></div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="content"><img src="img/gallery/img10.jpeg" alt=""></div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="content"><img src="img/gallery/img11.jpeg" alt=""></div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="content"><img src="img/gallery/img12.jpeg" alt=""></div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="content"><img src="img/gallery/img13.jpeg" alt=""></div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="content"><img src="img/gallery/img14.jpg" alt=""></div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="content"><img src="img/gallery/img15.jpeg" alt=""></div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="content"><img src="img/gallery/img16.jpeg" alt=""></div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="content"><img src="img/gallery/img17.jpeg" alt=""></div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="content"><img src="img/gallery/img18.jpg" alt=""></div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="content"><img src="img/gallery/img19.jpg" alt=""></div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="content"><img src="img/gallery/img20.jpg" alt=""></div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="content"><img src="img/gallery/img21.jpg" alt=""></div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="content"><img src="img/gallery/img22.jpg" alt=""></div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="content"><img src="img/gallery/img23.jpeg" alt=""></div>
+    </div>
+
+
+  </div>
+
+
+
+</div>
+
+
+
+  <div class="bgimg-2">
+
+      <div id="map"></div>
+  </div>
+
+  <div >
+    <div style="color:#ddd;background-color:#282E34;text-align:center;padding:20px;">
+      <h2>Dr. Jennie Gubner</h2>
+      <p>Thanks for Awe Walking with us :)</p>
+      <h5>Dr. Jennie Gubner © 2022</h6>
+    </div>
+  </div>
+
+</div>
+
+
+
+<!-- scripts used -->
+  <script src="js/carousel.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js'></script>
+  <script  src="js/typing_effect.js"></script>
+  <script  src="js/gallery.js"></script>
+  <script>
+	mapboxgl.accessToken = 'pk.eyJ1Ijoic3RlZm5hYmFvIiwiYSI6ImNrenN5NGo5aDc3ZjMyc3R2YTdhZDJ6N2oifQ.OvkQvGEQ5R_mYwejwzwxKQ';
+    const map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/stefnabao/cl20rv6fl002w14mt9dx45v21',
+        center: [-96, 37.8],
+        zoom: 3
+    });
+
+    const geojson = {
+        'type': 'FeatureCollection',
+        'features': [
+          {
+            'type': 'Feature',
+            'geometry': {
+              'type': 'Point',
+              'coordinates': [-112.07059, 33.45746]
+            },
+            'properties': {
+              'title': 'Mapbox',
+              'description': 'Tucson, AZ.'
+            }
+          },
+          {
+            'type': 'Feature',
+            'geometry': {
+              'type': 'Point',
+              'coordinates': [-111.16780, 32.24819]
+            },
+            'properties': {
+              'title': 'Mapbox',
+              'description': '<strong>This place is in tucson</strong><p>This is great place in tucson <a href="id test.html.html" target="_blank" title="Opens in a new window">this place is derster musem</a> place go this place if you like.</p>',
+            }
+          }
+        ]
+      };
+
+    map.on('load', () => {
+        map.addSource('places', {
+            // This GeoJSON contains features that include an "icon"
+            // property. The value of the "icon" property corresponds
+            // to an image in the Mapbox Streets style's sprite.
+            'type': 'geojson',
+            'data': {
+                'type': 'FeatureCollection',
+                'features': [
+                    {
+                        'type': 'Feature',
+                        'properties': {
+                            'description':
+                                '<strong>Make it Mount Pleasant</strong><p><a href="http://www.mtpleasantdc.com/makeitmtpleasant" target="_blank" title="Opens in a new window">Make it Mount Pleasant</a> is a handmade and vintage market and afternoon of live entertainment and kids activities. 12:00-6:00 p.m.</p>',
+                            'icon': '5'
+                        },
+                        'geometry': {
+                            'type': 'Point',
+                            'coordinates': [-110.79309, 32.46548]
+
+                        }
+                    },
+                    {
+                        'type': 'Feature',
+                        'properties': {
+                            'description':
+                                '<strong>Make it Mount Pleasant</strong><p><a href="http://www.mtpleasantdc.com/makeitmtpleasant" target="_blank" title="Opens in a new window">Make it Mount Pleasant</a> is a handmade and vintage market and afternoon of live entertainment and kids activities. 12:00-6:00 p.m.</p>',
+                            'icon': '6'
+                        },
+                        'geometry': {
+                            'type': 'Point',
+                            'coordinates': [-110.40269, 31.85802]
+                        }
+                    },
+                    {
+                        'type': 'Feature',
+                        'properties': {
+                            'description':
+                                '<strong>Make it Mount Pleasant</strong><p><a href="http://www.mtpleasantdc.com/makeitmtpleasant" target="_blank" title="Opens in a new window">Make it Mount Pleasant</a> is a handmade and vintage market and afternoon of live entertainment and kids activities. 12:00-6:00 p.m.</p>',
+                            'icon': '9'
+                        },
+                        'geometry': {
+                            'type': 'Point',
+                            'coordinates': [-109.87143, 32.74468]
+                        }
+                    },
+                ]
+            }
+        });
+        // Add a layer showing the places.
+        map.addLayer({
+            'id': 'places',
+            'type': 'symbol',
+            'source': 'places',
+            'layout': {
+                'icon-image': '{icon}',
+                'icon-size': 0.6,
+                'icon-allow-overlap': true
+            }
+        });
+
+        // When a click event occurs on a feature in the places layer, open a popup at the
+        // location of the feature, with description HTML from its properties.
+        map.on('click', 'places', (e) => {
+            // Copy coordinates array.
+            const coordinates = e.features[0].geometry.coordinates.slice();
+            const description = e.features[0].properties.description;
+
+            // Ensure that if the map is zoomed out such that multiple
+            // copies of the feature are visible, the popup appears
+            // over the copy being pointed to.
+            while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+            }
+
+            new mapboxgl.Popup()
+                .setLngLat(coordinates)
+                .setHTML(description)
+                .addTo(map);
+        });
+        // Change the cursor to a pointer when the mouse is over the places layer.
+        map.on('mouseenter', 'places', () => {
+            map.getCanvas().style.cursor = 'pointer';
+        });
+
+        // Change it back to a pointer when it leaves.
+        map.on('mouseleave', 'places', () => {
+            map.getCanvas().style.cursor = '';
+        });
+    });
+
+    map.on('zoomstart', '{icon}', function(e) {
+        if (map.getZoom() = 3) {
+            map.setLayoutProperty('[icon}', 'visibility', 'none');
+        }
+    })
+          for (const feature of geojson.features) {
+        // create a HTML element for each feature
+        const el = document.createElement('div');
+        el.className = 'marker1';
+
+        // make a marker for each feature and add it to the map
+        new mapboxgl.Marker(el)
+          .setLngLat(feature.geometry.coordinates)
+          .setPopup(
+            new mapboxgl.Popup({ offset: 25 }) // add popups
+              .setHTML(
+                `<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`
+              )
+          )
+          .addTo(map);
+        }
+    map.addControl(new mapboxgl.NavigationControl());
+</script>
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js"></script>
+
+
+
+  </body>
+</html>
